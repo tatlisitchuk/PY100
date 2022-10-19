@@ -12,9 +12,8 @@ for i in range(len(list_)):
         min_value_index = i
 '''
 for i, current in enumerate(list_):
-    min_value = list_[min_value_index]
     if current <= min_value:
         min_value_index = i
-        min_value = list_[min_value_index]
+        min_value = current
 
 print("Минимальный элемент =", min_value, "находится по индексу", min_value_index)
